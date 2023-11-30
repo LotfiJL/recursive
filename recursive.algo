@@ -1,0 +1,12 @@
+FUNCTION Palindrome (P) : BOOLEAN
+VAR
+    
+BEGIN
+    if length(P) <= 1:
+        return True
+    else if P[0] != P[length(P) - 1]:
+        return False
+    else:
+        return Palindrome(P[1:length(P) - 1])
+END
+
